@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "mongo-uuid": "*"
+    "mongo-uuid": "*",
+    "lodash": "~1.3.1"
   }
 }
