@@ -1,3 +1,11 @@
+Quick Easy way to manage custom js functions written for your mongo repo.
 
-loading common libraries into mongoshell
+Mongo shell is pretty neat that you can load as many js libraries you would like, thus it becomes easier to load common filter functions or utilities onto your shell functions. However managing this and including them on mongo shell every time is painful.
 
+This project just aims to show how you could organize local/external js libraries and them merge them to single js files for quick easy loading on to mongo shell.
+
+external js are loaded through bower so its easy to manage revisions.
+using rigger to include local/external libraries to merge to single js. 
+
+$ npm install # to setup
+$ grunt  # to build the single js. 
