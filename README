@@ -9,3 +9,7 @@ using rigger to include local/external libraries to merge to single js.
 
 $ npm install # to setup
 $ grunt  # to build the single js. 
+
+then 
+
+$ mongo dist/app.js
