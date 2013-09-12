@@ -8,6 +8,9 @@ module.exports = function(grunt) {
         }
       }
     },
+    jsbeautifier : {
+      files : ['src/**/*.js', 'lib/**/*.js'],
+    },
     rig: {
       compile: {        
         files: {
@@ -19,6 +22,8 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-rigger');
+  grunt.loadNpmTasks('grunt-jsbeautifier');
 
-  grunt.registerTask('default', ['bower', 'rig']);
+  grunt.registerTask('install', ['bower']);
+  grunt.registerTask('default', ['jsbeautifier', 'rig']);
 };
