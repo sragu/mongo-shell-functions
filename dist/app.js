@@ -5909,7 +5909,20 @@
 }(this));
 
 // include any local library from ../lib
+var print_json = function(object) {
+    print(tojson(object));
+};
 
 // your functions here
 
-_.forEach([1,2,4], function(e) {print(e);})
+db.test.remove()
+
+db.test.insert({
+    greet: 'Wassup!'
+});
+
+db.test.insert({
+    greet: 'hola!'
+});
+
+db.test.find({}).forEach(print_json);
